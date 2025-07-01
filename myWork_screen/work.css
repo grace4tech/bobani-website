@@ -1,0 +1,164 @@
+ /*MY WORK SCREEN */
+html , body{
+    overflow-x:hidden; 
+    overflow-y:scroll; 
+    scroll-behavior: smooth;
+}
+
+ .big-pic{
+    position:relative;
+   background-size:cover;
+background-image:url('../birthdays_images/birthday3.png');
+background-color:white;
+   background-repeat:no-repeat;
+   background-position:center;
+   width:120vw;
+   height:100vh;
+   overflow-x:hidden; 
+   color:white;
+   transition: background-image 1s ease-in-out;
+
+ }
+
+ .fonts{
+    margin-top:580px;
+    margin-left:60px;
+ }
+
+ .big-pic h6{
+    font-size:30px;
+    font-family:'Anthom',Baskervville;
+    margin-left:-25px;
+ }
+
+ .big-pic h1{
+    position:relative;
+    font-size:30px;
+    font-weight:900;
+    top:-70px;
+    left:70px;
+    text-decoration:overline; 
+    color:white; 
+ }
+
+ .big-pic .fonts a{
+    position:relative;
+    color:white;
+    font-size:20px;
+    top:-90px;
+    left:60px;
+    animation:jumps 2s linear infinite;
+    transition: all 0.4s ease-in-out; 
+ }
+ 
+ @keyframes jumps{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(20px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+    
+ }
+
+ .big-pic .hrr{
+position:absolute;
+width:380px;
+height:95vh; 
+margin-top:10px;
+margin-left:20px;
+background-color:transparent; 
+border:2px solid white;
+ }
+
+
+
+
+/*BOTTOM*/ 
+
+#typing{
+    font-size:1rem;
+    font-weight:bold;
+    color:black;
+    overflow:hidden;
+    width:fit-content; 
+    display:flex;
+}
+
+.cursor {
+  font-weight:normal;
+  color: green;
+  margin-left: 4px;
+  margin-top:-5px;
+  font-size:25px;
+  animation: blink 1s infinite steps(1), bounce 0.5s infinite alternate;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-3px);
+  }
+}
+
+nav{
+    display:flex;
+    gap:10px;
+    font-size:11px;
+    background-color:rgb(0,0,0,0.1);
+    padding:10px;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+    font-weight:400;
+    color:black;
+    transition:all 0.3s ease;
+}
+
+nav a:active{
+    color:black;
+    font-weight:900;
+}
+
+.nav-link1{
+text-decoration:underline;
+color:black;
+font-weight:900;
+}
+
+/*WEDDING*/
+#wedding_engagement-Pictures img{
+    margin-left:10px;
+    margin-top:10px;
+    width:90vw;
+    height:50vh;
+}
+
+/* MATERNITY*/
+#maternity-Pictures ,#birthdays-Pictures ,#more-Pictures{
+    display:none;
+    grid-template-columns: 1fr 1fr;
+    gap:5px;
+}
+
+#maternity-Pictures img , #birthdays-Pictures img ,#more-Pictures img{
+    width:100%;
+    height:60vh;
+    object-fit:cover;
+}
+

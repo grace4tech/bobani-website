@@ -1,0 +1,564 @@
+ html ,body{
+    overflow-x:hidden;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+    
+ }
+ 
+ .photoshoot-screen{
+    width:100vw;
+    height:100vh; 
+ }
+
+/* LOGO*/
+ .logo{
+    width:100vw;
+    height:30vh;
+ }
+ .logo img{
+    width:80%;
+    height:100%;
+    object-fit:cover;
+    margin-top:20px;
+    margin-left:20px;
+ }
+
+ /* READY TO BOOK*/
+ .first-theme {
+    position:relative;
+    z-index:1;
+    margin-top:50px;
+    height:300px;
+    background-image: url('../birthdays_images/birthday3.png');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    padding: 100px 20px; /* Adds space inside the section */
+    color: white; /* Make text readable on background */
+    text-align: center;
+}
+
+.first-theme h3{
+    font-size:60px;
+    font-family:'Satisfy',sans-serif;
+    color:white;
+}
+
+.first-theme h1{
+    font-size:50px;
+    letter-spacing:-6px;
+    font-family:'Anthon',sans-serif;
+    font-weight:900;
+    line-height:5px;
+    text-decoration:overline;
+}
+
+.first-theme p{
+    background-color:white;
+    color:rgb(224, 134, 149);
+    width:250px;
+    padding:5px;
+    font-size:20px;
+    box-shadow: 0 0 0 5px brown; 
+    margin-left:40px;
+}
+
+
+/* BOOKING POLICIES*/
+.second-theme{
+    position:relative;
+    z-index:2; 
+    top:-220px;
+    height:500px;
+    background-image:url('https://static.vecteezy.com/system/resources/thumbnails/035/889/727/small_2x/white-ripped-paper-png.png');
+    background-size:1700px;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding:40px;
+    filter:brightness(1.1);
+}
+
+.second-theme h1{
+    margin-top:180px;
+    font-size:30px;
+    letter-spacing:2px;
+    font-family:'Anthon',sans-serif;
+    font-weight:900;
+    line-height:15px;
+    text-decoration:overline;
+
+}
+.policies{
+    display:flex;
+    justify-content:space-evenly;
+    font-size:10px;
+    margin-top:30px;
+}
+
+/*IMPORTANT INF0*/
+.third-section{
+    position:relative;
+    z-index:1; 
+    top:-540px;
+    height:500px;
+    background-image:url('https://t4.ftcdn.net/jpg/03/63/41/11/360_F_363411155_0gIIM3IRMWzpRemcJ8e5qGxT8PnhHsR8.jpg');
+    background-size:1800px;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding-top:230px;
+    padding-left:30px;
+    color:white;
+    filter:brightness(1);
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:115%;
+background-color:rgb(0,0,0);
+z-index:1;
+margin-left:-30px;
+margin-top:-20px;
+}
+
+.info{
+    position:relative;
+    z-index:2;
+    display:flex;
+    justify-content:space-evenly;
+    font-size:10px;
+    color:white;
+    left:-10px;
+}
+
+.info h5{
+    font-weight:900;
+    font-size:12px;
+}
+
+.third-section .h1{
+    position:relative;
+    z-index:2;
+    top:25px;
+    color:white; 
+    font-size:50px;
+    letter-spacing:-6px;
+    font-family:'Anthon',sans-serif;
+    font-weight:900;
+    left:-20px;
+    line-height:5px;
+}
+
+.third-section .h1 span{
+    font-size:40px;
+    font-family:'Satisfy',sans-serif;
+    color:white;
+    text-decoration:none;
+    font-weight:100;
+    line-height:10px;
+}
+
+
+.third-section hr{
+    position:relative;
+    z-index:2;
+    height:3px;
+    background:linear-gradient(90deg ,grey,white,black);
+    margin-left:-30px;
+}
+/* CONTACT INFO*/ 
+.contact-section{
+    position:relative;
+    z-index:2;
+}
+
+.contact-section h6{
+text-align:center;
+font-size:20px;
+font-family:'Arial',sans-serif;
+margin-top:-5px;
+}
+.contact-info{
+    position:relative;
+    display:flex;
+    top:-30px;
+    justify-content: space-evenly;
+    gap:10px;
+    font-size:11px;
+    background:linear-gradient(90deg ,grey,black);
+    left:-40px;
+    border-radius:20px;
+    padding-left:10px;
+}
+
+.contact-info a{
+    text-decoration: none;
+    color:white;
+}
+
+/* VISIT US*/
+.visit-section{
+    position:relative;
+    z-index:2;
+}
+
+.visit-section h1{
+    position:relative;
+    z-index:2;
+    color:white; 
+    font-size:50px;
+    font-family:'Anthon',sans-serif;
+    font-weight:900;
+    left:-20px;
+    line-height:25px;
+    text-align:center;
+    top:-40px;
+}
+
+.visit-section h1 span{
+    font-size:40px;
+    font-family:'Satisfy',sans-serif;
+    color:white;
+    text-decoration:none;
+    font-weight:100;
+    line-height:10px;
+}
+
+.visit{
+    position:relative;
+    z-index:2;
+    display:flex;
+    justify-content: space-evenly;
+    top:-70px;
+}
+
+.visit h4{
+    color:white;
+    font-weight:900;
+    background:linear-gradient(90deg ,grey,black);
+    text-align:center;
+    border-radius:5px;
+}
+
+.visit strong{
+    font-weight:900;
+    color:green; 
+}
+
+/* TAG US*/
+.fourth-section{
+position:relative;
+    z-index:1;
+    top:-220px;
+    height:600px;
+    background-image: url('../birthdays_images/birthday1.png');
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    padding-top:-50px;
+    color: white; /* Make text readable on background */
+    text-align: center;
+}
+
+.fourth-section img{
+position:relative;
+width:170px;
+height:320px;
+border-radius:20px;
+left:-120px;
+top:30px;
+}
+
+/* THANK YOU*/
+.white{
+    position:relative;
+    z-index:2; 
+    width:100vw;
+    height:200px;
+    top:-250px;
+
+    background-image:url('https://static.vecteezy.com/system/resources/thumbnails/035/889/723/small_2x/white-ripped-paper-png.png');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding:40px;
+    filter:brightness(2);
+    color:white;
+}
+
+.fifth-section{
+    position:relative;
+    top:-480px;
+    z-index:3; 
+    height:500px;
+    background-image:url('https://img.freepik.com/premium-photo/black-background-with-wavy-texture-silky-black-wallpaper-marble-liquid_1003829-228925.jpg');
+    background-size:1700px;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding:40px;
+    filter:brightness(1);
+    color:white;
+}
+
+.fifth-section h5{
+    font-size:80px;
+    font-family:'Satisfy',sans-serif;
+    color:white;
+    text-decoration:none;
+    font-weight:100;
+    line-height:10px;
+}
+
+.fifth-section h1{
+    position:relative;
+    z-index:2;
+    color:white; 
+    font-size:40px;
+    letter-spacing:-4px;
+    font-family:'Anthon',sans-serif;
+    font-weight:900;
+    left:-20px;
+    transform:scaleY(3);
+    display:inline-block; 
+    text-align:center;
+    top:-40px;
+}
+
+.fifth-section h2{
+    position:relative;
+    font-family:'Satisfy',sans-serif;
+    left:250px;
+}
+
+.fifth-section p{
+    position:relative;
+    top:-10px;
+    width:100vw;
+    color:orangered;
+    padding-left:70px;
+    left:-40px;
+    background:linear-gradient(90deg , grey , white , black);
+}
+
+
+/* BELOW PART*/
+.booking-section{
+position:relative;
+top:-370px;
+background-color: white;
+border:5px solid white; 
+box-shadow:-30px 30px 60px rgba(0,0,0.9);
+transform:translateY(-10px);
+transition:transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.booking-section:hover{
+    transform:translateY(-20px);
+    box-shadow:0 30px 60px rgba(0,0,0,0.3); 
+}
+
+.booking-section h1{
+    margin-top:-40px;
+    margin-left:80px;
+    font-size:20px;
+
+}
+
+.graduation-photoshoot .book-images1 ,.Regular-photoshoot .book-images4 , .birthday-photoshoot .book-images5 ,.Maternity-photoshoot .book-images6{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:50%;
+    margin-left:60px;
+    margin-top:30px;
+}
+
+.book-images1 img ,.book-images4 img, .book-images5 img , .book-images6 img{
+    width:140px;
+    height:190px;
+    object-fit:cover;
+    border:1px solid gold;
+    box-shadow:0 0 0 20px black; 
+}
+
+
+.book-images2 img , .book-images3 img , .book-images7 img ,.book-images8 img ,.book-images9 img{
+    width:300px;
+    height:370px;
+    object-fit:cover;
+    margin-left:60px;
+}
+
+.book-images9 img{
+    box-shadow:0 0 0 20px orange; 
+    margin-top:20px;
+}
+
+.book{
+    width:50px;
+    height:20px;
+    border-radius:0;
+    border:1px solid black;
+    padding:10px;
+    right:20px;
+    margin-top:-30px;
+}
+
+.second{
+    border:1px solid black;
+    padding:10px;
+    position:absolute;
+    left:100px;
+    top:175px;
+}
+
+.firstP{
+    border:1px solid black;
+    padding:10px;
+    position:absolute;
+    left:180px;
+    top:175px;
+}
+
+.secondPA{
+    border:1px solid black;
+    padding:10px;
+    position:absolute;
+    left:100px;
+    top:56.2rem;
+}
+
+.secondP{
+    border:1px solid black;
+    padding:10px;
+    position:absolute;
+    left:180px;
+    top:56.2rem;
+}
+
+.thirdPA{
+    border:1px solid black;
+    padding:10px;
+    position:absolute;
+    left:100px;
+    top:97.8rem;
+}
+
+.thirdP{
+    border:1px solid black;
+    padding:10px;
+    position:absolute;
+    left:180px;
+    top:97.8rem;
+}
+
+.fourthPA{
+    border:1px solid black;
+    padding:10px;
+    position:absolute;
+    left:85px;
+    top:134.6rem;
+}
+
+.fourthP{
+    border:1px solid black;
+    padding:10px;
+    position:absolute;
+    left:180px;
+    top:134.6rem;
+}
+
+.fifthPA{
+   border:1px solid black;
+    padding:10px;
+    position:absolute;
+    left:100px;
+    top:183.4rem; 
+}
+
+.fifthP{
+    border:1px solid black;
+    padding:10px;
+    position:absolute;
+    left:180px;
+    top:183.4rem;
+}
+
+.sixthPA{
+    border:1px solid black;
+    padding:10px;
+    position:absolute;
+    left:100px;
+    top:230.9rem;
+}
+
+.sixthP{
+    border:1px solid black;
+    padding:10px;
+    position:absolute;
+    left:180px;
+    top:230.9rem;
+}
+
+.sevethPA{
+    border:1px solid black;
+    padding:10px;
+    position:absolute;
+    left:100px;
+    top:276.2rem;
+}
+
+.sevethP{
+    border:1px solid black;
+    padding:10px;
+    position:absolute;
+    left:180px;
+    top:276.2rem;
+}
+
+.eightPA{
+    border:1px solid black;
+    padding:10px;
+    position:absolute;
+    left:100px;
+    top:318.8rem;
+}
+
+.eigthP{
+    border:1px solid black;
+    padding:10px;
+    position:absolute;
+    left:180px;
+    top:318.8rem;
+}
+
+.ninthPA{
+  border:1px solid black;
+    padding:10px;
+    position:absolute;
+    left:100px;
+    top:361.3rem;  
+}
+
+.nithP{
+    border:1px solid black;
+    padding:10px;
+    position:absolute;
+    left:180px;
+    top:361.3rem; 
+}
+
+footer{
+    position:relative;
+    left:120px;
+    top:20px;
+}
+
+footer h2{
+    margin-top:-20px;
+}
+
+footer p{
+    margin-left:40px;
+}
+

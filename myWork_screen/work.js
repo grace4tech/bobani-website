@@ -59,6 +59,7 @@ const allImages = [...moreImages, ...birthdayImages];
 const allImages2 = [...birthdayImages , ...moreImages];
 const bigPic1 = document.getElementById('big_image');
 const bigPic2 = document.getElementById("big_image2");
+const bigPicMain = document.querySelector('.big-pic')
 let index = 0;
 let secIndex = 0;
 function changeBackground() {
@@ -77,7 +78,13 @@ function changeBackgroundTwo() {
 }
 changeBackgroundTwo();
 
-
+function changeBackgroundMain() {
+  if (!bigPicMain) return;
+  bigPicMain.style.backgroundImage= 'url(allImages[index])';
+  index = (index + 1) % allImages.length;
+  setTimeout(changeBackgroundMain, 3000);
+}
+changeBackgroundMain();
 
 //BOTTOM PART IMAGES SHOWING
 const sections = {

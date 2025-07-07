@@ -5,7 +5,7 @@ html , body{
     scroll-behavior: smooth;
 }
 
- .big_image{
+ .big-pic{
 background-image:url('../birthdays_images/birthday3.png');
    background-repeat:no-repeat;
    background-position:center;
@@ -20,9 +20,15 @@ background-image:url('../birthdays_images/birthday3.png');
  .big-image2{
   display:none;
  }
+
+ .big-image{
+  display:none; 
+ }
+
  .fonts{
     margin-top:580px;
     margin-left:60px;
+    display:block; 
  }
 
  .big-pic h6{

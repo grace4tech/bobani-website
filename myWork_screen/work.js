@@ -55,17 +55,28 @@ const birthdayImages = [
 ];
 
 const allImages = [...moreImages, ...birthdayImages];
-const bigPic = document.querySelector('.big-pic');
+
+const allImages2 = [...birthdayImages , ...moreImages];
+const bigPic1 = document.getElementById('big_image');
+const bigPic2 = document.getElementById("big_image2");
 let index = 0;
-
+let secIndex = 0;
 function changeBackground() {
-  if (!bigPic) return;
-  bigPic.style.backgroundImage = `url('${allImages[index]}')`;
+  if (!bigPic1) return;
+  bigPic1.src = allImages[index];
   index = (index + 1) % allImages.length;
-  setTimeout(changeBackground, 4000); // 4 seconds
+  setTimeout(changeBackground, 3000);
 }
-
 changeBackground();
+
+function changeBackgroundTwo() {
+  if (!bigPic2) return;
+  bigPic2.src = allImages2[secIndex];
+  secIndex = (secIndex + 1) % allImages2.length;
+  setTimeout(changeBackgroundTwo, 3000);
+}
+changeBackgroundTwo();
+
 
 
 //BOTTOM PART IMAGES SHOWING

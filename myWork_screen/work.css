@@ -8,7 +8,8 @@ html , body{
  .big-pic{
 background-image:url('../birthdays_images/birthday3.png');
    background-repeat:no-repeat;
-   background-position:center;
+   background-position:left;
+   background-size:cover;
    width:120vw;
    height:100vh;
    overflow-x:hidden; 
@@ -29,6 +30,8 @@ background-image:url('../birthdays_images/birthday3.png');
     margin-top:580px;
     margin-left:60px;
     display:block; 
+    position:absolute;
+    top:-100px;
  }
 
  .big-pic h6{
@@ -180,12 +183,15 @@ font-weight:900;
   display:none; 
 }
 
+
 @media (min-width: 1028px){
    .big-pic{
     display:flex;
-    gap:20px;
+    justify-content:space-evenly;
+    gap:-5px;
     background-image:none;
-    background:radial-gradient(circle , rgb(129, 212, 250) , white)
+    background:radial-gradient(circle , rgb(129, 212, 250) , white);
+    margin-left:-55px;
 }
 
 #big_image{
@@ -193,7 +199,7 @@ font-weight:900;
   height:100vh;
   transition: background-image 1s ease-in-out;
   border:10px solid white;
-  margin-right:50px;
+  margin-right:150px;
 }
 
 #big_image2{
@@ -202,27 +208,41 @@ font-weight:900;
   height:100vh;
 transition: background-image 1s ease-in-out;
   border:10px solid white;
-  margin-left:50px;
+  margin-left:-100px;
 }
 .fonts{
   margin-top:200px;
   text-align:left;
-  padding:20px;
+  position:relative;
+  margin-left:-160px;
 }
 
 .fonts h6{
-  display:none;
+  color:lightblue;
 }
 
 .fonts h1{
-  margin-left:-150px;
+  padding-left:-50px;
+  color:brown;
+  padding-top:20px;
 }
+
 .scrollBtn{
   text-decoration:underline;
   margin-left:-100px;
   margin-top:100px;
+  color:blue;
 }
 
+.big-pic .fonts a{
+    position:relative;
+    color:blue;
+    font-size:20px;
+    top:-90px;
+    left:60px;
+    animation:jumps 5s linear infinite;
+    transition: all 0.4s ease-in-out; 
+ }
 /* BOTTOM PART */
 #wedding_engagement-Pictures img{
     margin-left:10px;

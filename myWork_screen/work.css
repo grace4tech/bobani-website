@@ -5,29 +5,21 @@ html , body{
     scroll-behavior: smooth;
 }
 
-
- .big-pic{
-    position:relative;
-   background-size:cover;
-background-image:url('../birthdays_images/birthday3.png');
-background-color:white;
- }
  .big_image{
 background-image:url('../birthdays_images/birthday3.png');
-
    background-repeat:no-repeat;
    background-position:center;
    width:120vw;
    height:100vh;
    overflow-x:hidden; 
-
    color:white;
-
-
    transition: background-image 1s ease-in-out;
 
  }
 
+ .big-image2{
+  display:none;
+ }
  .fonts{
     margin-top:580px;
     margin-left:60px;
@@ -40,6 +32,7 @@ background-image:url('../birthdays_images/birthday3.png');
  }
 
  .big-pic h1{
+  display:block;
     position:relative;
     font-size:30px;
     font-weight:900;
